@@ -51,7 +51,16 @@ function wiipod_feats_fieldgroup_default_groups() {
       ),
     ),
     'weight' => '-2',
-    'fields' => array(),
+    'fields' => array(
+      '0' => 'field_projectlogo',
+      '1' => 'field_fgident',
+      '2' => 'field_focusgroup_speaker',
+      '3' => 'field_contactdlrpicture',
+      '4' => 'field_contactdlr',
+      '5' => 'field_contactbalance',
+      '6' => 'field_projects',
+      '7' => 'field_frontpageimage',
+    ),
   );
 
   // Exported group: group_projectcontact
@@ -95,7 +104,15 @@ function wiipod_feats_fieldgroup_default_groups() {
       ),
     ),
     'weight' => '12',
-    'fields' => array(),
+    'fields' => array(
+      '0' => 'field_projecthomepage',
+      '1' => 'field_project_rssfeed',
+      '2' => 'field_projectaccount',
+      '3' => 'field_projectinstitutions',
+      '4' => 'field_ref_projectinstitutions',
+      '5' => 'field_valuepartner',
+      '6' => 'field_ref_valuepartner',
+    ),
   );
 
   // Exported group: group_projectfocus
@@ -139,7 +156,12 @@ function wiipod_feats_fieldgroup_default_groups() {
       ),
     ),
     'weight' => '11',
-    'fields' => array(),
+    'fields' => array(
+      '0' => 'field_researchquestions',
+      '1' => 'field_projecttheories',
+      '2' => 'field_projectapproach',
+      '3' => 'field_projecttechniques',
+    ),
   );
 
   // Exported group: group_projectinfo
@@ -183,7 +205,15 @@ function wiipod_feats_fieldgroup_default_groups() {
       ),
     ),
     'weight' => '8',
-    'fields' => array(),
+    'fields' => array(
+      '0' => 'field_projectident',
+      '1' => 'field_projectlogo',
+      '2' => 'field_projectfkz',
+      '3' => 'field_projektgoals',
+      '4' => 'field_synopsis',
+      '5' => 'field_steckbrief',
+      '6' => 'field_projectmembers',
+    ),
   );
 
   // Translatables

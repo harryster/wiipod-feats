@@ -54,6 +54,21 @@ function wiipod_feats_default_fe_block_settings() {
     'machine_name' => 'login_message_bar',
   );
 
+  $theme['event-0'] = array(
+    'module' => 'event',
+    'delta' => '0',
+    'theme' => 'balance',
+    'status' => '1',
+    'weight' => '-23',
+    'region' => 'right',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '1',
+    'pages' => '<front>',
+    'title' => '',
+    'cache' => '1',
+  );
+
   $theme['event-1'] = array(
     'module' => 'event',
     'delta' => '1',
@@ -84,12 +99,57 @@ function wiipod_feats_default_fe_block_settings() {
     'cache' => '1',
   );
 
+  $theme['heartbeat-groupsactivity'] = array(
+    'module' => 'heartbeat',
+    'delta' => 'groupsactivity',
+    'theme' => 'balance',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '6',
+  );
+
+  $theme['heartbeat-ogheartbeat'] = array(
+    'module' => 'heartbeat',
+    'delta' => 'ogheartbeat',
+    'theme' => 'balance',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '6',
+  );
+
   $theme['masquerade-0'] = array(
     'module' => 'masquerade',
     'delta' => '0',
     'theme' => 'balance',
     'status' => 0,
     'weight' => '-10',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+  );
+
+  $theme['menu-features'] = array(
+    'module' => 'menu',
+    'delta' => 'features',
+    'theme' => 'balance',
+    'status' => 0,
+    'weight' => '-16',
     'region' => '',
     'custom' => '0',
     'throttle' => '0',
@@ -204,6 +264,21 @@ function wiipod_feats_default_fe_block_settings() {
     'cache' => '-1',
   );
 
+  $theme['menu_block-3'] = array(
+    'module' => 'menu_block',
+    'delta' => '3',
+    'theme' => 'balance',
+    'status' => 0,
+    'weight' => '-23',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '-1',
+  );
+
   $theme['nice_menus-1'] = array(
     'module' => 'nice_menus',
     'delta' => '1',
@@ -216,6 +291,51 @@ function wiipod_feats_default_fe_block_settings() {
     'visibility' => '0',
     'pages' => '',
     'title' => '<none>',
+    'cache' => '-1',
+  );
+
+  $theme['nice_menus-2'] = array(
+    'module' => 'nice_menus',
+    'delta' => '2',
+    'theme' => 'balance',
+    'status' => 0,
+    'weight' => '-25',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '-1',
+  );
+
+  $theme['nice_menus-3'] = array(
+    'module' => 'nice_menus',
+    'delta' => '3',
+    'theme' => 'balance',
+    'status' => 0,
+    'weight' => '-1',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+  );
+
+  $theme['node-0'] = array(
+    'module' => 'node',
+    'delta' => '0',
+    'theme' => 'balance',
+    'status' => 0,
+    'weight' => '4',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
     'cache' => '-1',
   );
 
@@ -279,6 +399,66 @@ function wiipod_feats_default_fe_block_settings() {
     'cache' => '-1',
   );
 
+  $theme['profile-0'] = array(
+    'module' => 'profile',
+    'delta' => '0',
+    'theme' => 'balance',
+    'status' => 0,
+    'weight' => '-20',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '5',
+  );
+
+  $theme['projecttabs-0'] = array(
+    'module' => 'projecttabs',
+    'delta' => '0',
+    'theme' => 'balance',
+    'status' => 0,
+    'weight' => '-27',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '1',
+  );
+
+  $theme['projecttabs-1'] = array(
+    'module' => 'projecttabs',
+    'delta' => '1',
+    'theme' => 'balance',
+    'status' => 0,
+    'weight' => '-25',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '1',
+    'pages' => '<front>',
+    'title' => '',
+    'cache' => '1',
+  );
+
+  $theme['projecttabs-2'] = array(
+    'module' => 'projecttabs',
+    'delta' => '2',
+    'theme' => 'balance',
+    'status' => '1',
+    'weight' => '-21',
+    'region' => 'right',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '1',
+    'pages' => 'veranstaltungen',
+    'title' => '',
+    'cache' => '1',
+  );
+
   $theme['search-0'] = array(
     'module' => 'search',
     'delta' => '0',
@@ -286,6 +466,51 @@ function wiipod_feats_default_fe_block_settings() {
     'status' => '1',
     'weight' => '-25',
     'region' => 'header',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '-1',
+  );
+
+  $theme['simplenews-0'] = array(
+    'module' => 'simplenews',
+    'delta' => '0',
+    'theme' => 'balance',
+    'status' => 0,
+    'weight' => '-7',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '1',
+  );
+
+  $theme['simplenews-1'] = array(
+    'module' => 'simplenews',
+    'delta' => '1',
+    'theme' => 'balance',
+    'status' => 0,
+    'weight' => '-6',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+  );
+
+  $theme['system-0'] = array(
+    'module' => 'system',
+    'delta' => '0',
+    'theme' => 'balance',
+    'status' => 0,
+    'weight' => '-24',
+    'region' => '',
     'custom' => '0',
     'throttle' => '0',
     'visibility' => '0',
@@ -309,12 +534,42 @@ function wiipod_feats_default_fe_block_settings() {
     'cache' => '-1',
   );
 
-  $theme['user-1'] = array(
-    'module' => 'user',
-    'delta' => '1',
+  $theme['views-8d11182d17ad5887f019e4971a1050b6'] = array(
+    'module' => 'views',
+    'delta' => '8d11182d17ad5887f019e4971a1050b6',
     'theme' => 'balance',
     'status' => 0,
-    'weight' => '-21',
+    'weight' => '6',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+  );
+
+  $theme['views-Veranstaltungen-block_1'] = array(
+    'module' => 'views',
+    'delta' => 'Veranstaltungen-block_1',
+    'theme' => 'balance',
+    'status' => 0,
+    'weight' => '5',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+  );
+
+  $theme['views-nodehierarchy_downloads-block_1'] = array(
+    'module' => 'views',
+    'delta' => 'nodehierarchy_downloads-block_1',
+    'theme' => 'balance',
+    'status' => 0,
+    'weight' => '9',
     'region' => '',
     'custom' => '0',
     'throttle' => '0',
@@ -434,6 +689,21 @@ function wiipod_feats_default_fe_block_settings() {
     'machine_name' => 'login_message_bar',
   );
 
+  $theme['event-0'] = array(
+    'module' => 'event',
+    'delta' => '0',
+    'theme' => 'rubik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '1',
+    'pages' => '<front>',
+    'title' => '',
+    'cache' => '1',
+  );
+
   $theme['event-1'] = array(
     'module' => 'event',
     'delta' => '1',
@@ -464,9 +734,54 @@ function wiipod_feats_default_fe_block_settings() {
     'cache' => '1',
   );
 
+  $theme['heartbeat-groupsactivity'] = array(
+    'cache' => 6,
+    'module' => 'heartbeat',
+    'delta' => 'groupsactivity',
+    'theme' => 'rubik',
+    'pages' => '',
+    'status' => 0,
+    'weight' => 0,
+    'region' => '',
+    'custom' => 0,
+    'throttle' => 0,
+    'visibility' => 0,
+    'title' => '',
+  );
+
+  $theme['heartbeat-ogheartbeat'] = array(
+    'cache' => 6,
+    'module' => 'heartbeat',
+    'delta' => 'ogheartbeat',
+    'theme' => 'rubik',
+    'pages' => '',
+    'status' => 0,
+    'weight' => 0,
+    'region' => '',
+    'custom' => 0,
+    'throttle' => 0,
+    'visibility' => 0,
+    'title' => '',
+  );
+
   $theme['masquerade-0'] = array(
     'module' => 'masquerade',
     'delta' => '0',
+    'theme' => 'rubik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+  );
+
+  $theme['menu-features'] = array(
+    'module' => 'menu',
+    'delta' => 'features',
     'theme' => 'rubik',
     'status' => 0,
     'weight' => '0',
@@ -584,6 +899,21 @@ function wiipod_feats_default_fe_block_settings() {
     'cache' => '-1',
   );
 
+  $theme['menu_block-3'] = array(
+    'module' => 'menu_block',
+    'delta' => '3',
+    'theme' => 'rubik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '-1',
+  );
+
   $theme['nice_menus-1'] = array(
     'module' => 'nice_menus',
     'delta' => '1',
@@ -596,6 +926,51 @@ function wiipod_feats_default_fe_block_settings() {
     'visibility' => '0',
     'pages' => '',
     'title' => '<none>',
+    'cache' => '-1',
+  );
+
+  $theme['nice_menus-2'] = array(
+    'module' => 'nice_menus',
+    'delta' => '2',
+    'theme' => 'rubik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '-1',
+  );
+
+  $theme['nice_menus-3'] = array(
+    'module' => 'nice_menus',
+    'delta' => '3',
+    'theme' => 'rubik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+  );
+
+  $theme['node-0'] = array(
+    'module' => 'node',
+    'delta' => '0',
+    'theme' => 'rubik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
     'cache' => '-1',
   );
 
@@ -659,6 +1034,66 @@ function wiipod_feats_default_fe_block_settings() {
     'cache' => '-1',
   );
 
+  $theme['profile-0'] = array(
+    'module' => 'profile',
+    'delta' => '0',
+    'theme' => 'rubik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '5',
+  );
+
+  $theme['projecttabs-0'] = array(
+    'module' => 'projecttabs',
+    'delta' => '0',
+    'theme' => 'rubik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '1',
+  );
+
+  $theme['projecttabs-1'] = array(
+    'module' => 'projecttabs',
+    'delta' => '1',
+    'theme' => 'rubik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '1',
+    'pages' => '<front>',
+    'title' => '',
+    'cache' => '1',
+  );
+
+  $theme['projecttabs-2'] = array(
+    'module' => 'projecttabs',
+    'delta' => '2',
+    'theme' => 'rubik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '1',
+    'pages' => 'veranstaltungen',
+    'title' => '',
+    'cache' => '1',
+  );
+
   $theme['search-0'] = array(
     'module' => 'search',
     'delta' => '0',
@@ -666,6 +1101,51 @@ function wiipod_feats_default_fe_block_settings() {
     'status' => 0,
     'weight' => '0',
     'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '-1',
+  );
+
+  $theme['simplenews-0'] = array(
+    'module' => 'simplenews',
+    'delta' => '0',
+    'theme' => 'rubik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '1',
+  );
+
+  $theme['simplenews-1'] = array(
+    'module' => 'simplenews',
+    'delta' => '1',
+    'theme' => 'rubik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+  );
+
+  $theme['system-0'] = array(
+    'module' => 'system',
+    'delta' => '0',
+    'theme' => 'rubik',
+    'status' => '1',
+    'weight' => '10',
+    'region' => 'footer',
     'custom' => '0',
     'throttle' => '0',
     'visibility' => '0',
@@ -689,13 +1169,43 @@ function wiipod_feats_default_fe_block_settings() {
     'cache' => '-1',
   );
 
-  $theme['user-1'] = array(
-    'module' => 'user',
-    'delta' => '1',
+  $theme['views-8d11182d17ad5887f019e4971a1050b6'] = array(
+    'module' => 'views',
+    'delta' => '8d11182d17ad5887f019e4971a1050b6',
     'theme' => 'rubik',
-    'status' => '1',
+    'status' => 0,
     'weight' => '0',
-    'region' => 'left',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+  );
+
+  $theme['views-Veranstaltungen-block_1'] = array(
+    'module' => 'views',
+    'delta' => 'Veranstaltungen-block_1',
+    'theme' => 'rubik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+  );
+
+  $theme['views-nodehierarchy_downloads-block_1'] = array(
+    'module' => 'views',
+    'delta' => 'nodehierarchy_downloads-block_1',
+    'theme' => 'rubik',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
     'custom' => '0',
     'throttle' => '0',
     'visibility' => '0',
@@ -814,6 +1324,21 @@ function wiipod_feats_default_fe_block_settings() {
     'machine_name' => 'login_message_bar',
   );
 
+  $theme['event-0'] = array(
+    'module' => 'event',
+    'delta' => '0',
+    'theme' => 'garland',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '1',
+    'pages' => '<front>',
+    'title' => '',
+    'cache' => '1',
+  );
+
   $theme['event-1'] = array(
     'module' => 'event',
     'delta' => '1',
@@ -844,9 +1369,54 @@ function wiipod_feats_default_fe_block_settings() {
     'cache' => '1',
   );
 
+  $theme['heartbeat-groupsactivity'] = array(
+    'cache' => 6,
+    'module' => 'heartbeat',
+    'delta' => 'groupsactivity',
+    'theme' => 'garland',
+    'pages' => '',
+    'status' => 0,
+    'weight' => 0,
+    'region' => '',
+    'custom' => 0,
+    'throttle' => 0,
+    'visibility' => 0,
+    'title' => '',
+  );
+
+  $theme['heartbeat-ogheartbeat'] = array(
+    'cache' => 6,
+    'module' => 'heartbeat',
+    'delta' => 'ogheartbeat',
+    'theme' => 'garland',
+    'pages' => '',
+    'status' => 0,
+    'weight' => 0,
+    'region' => '',
+    'custom' => 0,
+    'throttle' => 0,
+    'visibility' => 0,
+    'title' => '',
+  );
+
   $theme['masquerade-0'] = array(
     'module' => 'masquerade',
     'delta' => '0',
+    'theme' => 'garland',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+  );
+
+  $theme['menu-features'] = array(
+    'module' => 'menu',
+    'delta' => 'features',
     'theme' => 'garland',
     'status' => 0,
     'weight' => '0',
@@ -964,6 +1534,21 @@ function wiipod_feats_default_fe_block_settings() {
     'cache' => '-1',
   );
 
+  $theme['menu_block-3'] = array(
+    'module' => 'menu_block',
+    'delta' => '3',
+    'theme' => 'garland',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '-1',
+  );
+
   $theme['nice_menus-1'] = array(
     'module' => 'nice_menus',
     'delta' => '1',
@@ -976,6 +1561,51 @@ function wiipod_feats_default_fe_block_settings() {
     'visibility' => '0',
     'pages' => '',
     'title' => '<none>',
+    'cache' => '-1',
+  );
+
+  $theme['nice_menus-2'] = array(
+    'module' => 'nice_menus',
+    'delta' => '2',
+    'theme' => 'garland',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '-1',
+  );
+
+  $theme['nice_menus-3'] = array(
+    'module' => 'nice_menus',
+    'delta' => '3',
+    'theme' => 'garland',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+  );
+
+  $theme['node-0'] = array(
+    'module' => 'node',
+    'delta' => '0',
+    'theme' => 'garland',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
     'cache' => '-1',
   );
 
@@ -1039,6 +1669,66 @@ function wiipod_feats_default_fe_block_settings() {
     'cache' => '-1',
   );
 
+  $theme['profile-0'] = array(
+    'module' => 'profile',
+    'delta' => '0',
+    'theme' => 'garland',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '5',
+  );
+
+  $theme['projecttabs-0'] = array(
+    'module' => 'projecttabs',
+    'delta' => '0',
+    'theme' => 'garland',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '1',
+  );
+
+  $theme['projecttabs-1'] = array(
+    'module' => 'projecttabs',
+    'delta' => '1',
+    'theme' => 'garland',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '1',
+    'pages' => '<front>',
+    'title' => '',
+    'cache' => '1',
+  );
+
+  $theme['projecttabs-2'] = array(
+    'module' => 'projecttabs',
+    'delta' => '2',
+    'theme' => 'garland',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '1',
+    'pages' => 'veranstaltungen',
+    'title' => '',
+    'cache' => '1',
+  );
+
   $theme['search-0'] = array(
     'module' => 'search',
     'delta' => '0',
@@ -1046,6 +1736,51 @@ function wiipod_feats_default_fe_block_settings() {
     'status' => 0,
     'weight' => '0',
     'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '<none>',
+    'cache' => '-1',
+  );
+
+  $theme['simplenews-0'] = array(
+    'module' => 'simplenews',
+    'delta' => '0',
+    'theme' => 'garland',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '1',
+  );
+
+  $theme['simplenews-1'] = array(
+    'module' => 'simplenews',
+    'delta' => '1',
+    'theme' => 'garland',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+  );
+
+  $theme['system-0'] = array(
+    'module' => 'system',
+    'delta' => '0',
+    'theme' => 'garland',
+    'status' => '1',
+    'weight' => '10',
+    'region' => 'footer',
     'custom' => '0',
     'throttle' => '0',
     'visibility' => '0',
@@ -1069,13 +1804,43 @@ function wiipod_feats_default_fe_block_settings() {
     'cache' => '-1',
   );
 
-  $theme['user-1'] = array(
-    'module' => 'user',
-    'delta' => '1',
+  $theme['views-8d11182d17ad5887f019e4971a1050b6'] = array(
+    'module' => 'views',
+    'delta' => '8d11182d17ad5887f019e4971a1050b6',
     'theme' => 'garland',
-    'status' => '1',
+    'status' => 0,
     'weight' => '0',
-    'region' => 'left',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+  );
+
+  $theme['views-Veranstaltungen-block_1'] = array(
+    'module' => 'views',
+    'delta' => 'Veranstaltungen-block_1',
+    'theme' => 'garland',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
+    'custom' => '0',
+    'throttle' => '0',
+    'visibility' => '0',
+    'pages' => '',
+    'title' => '',
+    'cache' => '-1',
+  );
+
+  $theme['views-nodehierarchy_downloads-block_1'] = array(
+    'module' => 'views',
+    'delta' => 'nodehierarchy_downloads-block_1',
+    'theme' => 'garland',
+    'status' => 0,
+    'weight' => '0',
+    'region' => '',
     'custom' => '0',
     'throttle' => '0',
     'visibility' => '0',

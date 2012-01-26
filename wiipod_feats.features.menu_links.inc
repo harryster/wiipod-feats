@@ -63,34 +63,6 @@ function wiipod_feats_menu_default_menu_links() {
     'weight' => '0',
     'parent_path' => 'admin/settings',
   );
-  // Exported menu link: navigation:logout
-  $menu_links['navigation:logout'] = array(
-    'menu_name' => 'navigation',
-    'link_path' => 'logout',
-    'router_path' => 'logout',
-    'link_title' => 'Log out',
-    'options' => array(),
-    'module' => 'system',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '0',
-    'expanded' => '0',
-    'weight' => '10',
-  );
-  // Exported menu link: navigation:user/%
-  $menu_links['navigation:user/%'] = array(
-    'menu_name' => 'navigation',
-    'link_path' => 'user/%',
-    'router_path' => 'user/%',
-    'link_title' => 'My account',
-    'options' => array(),
-    'module' => 'system',
-    'hidden' => '0',
-    'external' => '0',
-    'has_children' => '1',
-    'expanded' => '0',
-    'weight' => '0',
-  );
   // Exported menu link: primary-links:<front>
   $menu_links['primary-links:<front>'] = array(
     'menu_name' => 'primary-links',
@@ -162,17 +134,53 @@ function wiipod_feats_menu_default_menu_links() {
     'weight' => '-46',
     'parent_path' => 'node/2',
   );
+  // Exported menu link: secondary-links:http://drupal.org
+  $menu_links['secondary-links:http://drupal.org'] = array(
+    'menu_name' => 'secondary-links',
+    'link_path' => 'http://drupal.org',
+    'router_path' => '',
+    'link_title' => 'Terms & Conditions',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '1',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '-49',
+  );
+  // Exported menu link: secondary-links:node/12
+  $menu_links['secondary-links:node/12'] = array(
+    'menu_name' => 'secondary-links',
+    'link_path' => 'node/12',
+    'router_path' => 'node/%',
+    'link_title' => 'Impressum',
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Impressum',
+      ),
+    ),
+    'module' => 'menu',
+    'hidden' => '0',
+    'external' => '0',
+    'has_children' => '0',
+    'expanded' => '0',
+    'weight' => '11',
+  );
   // Translatables
   // Included for use with string extractors like potx.
   t('Downloads');
   t('Events');
   t('Home');
-  t('Log out');
+  t('Impressum');
   t('Menu block');
   t('Menus');
-  t('My account');
   t('Nice menus');
   t('Service');
+  t('Terms & Conditions');
 
 
   return $menu_links;

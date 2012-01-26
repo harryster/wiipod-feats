@@ -8,6 +8,9 @@ function wiipod_feats_ctools_plugin_api() {
   if ($module == "features_plumber" && $api == "features_plumber_records") {
     return array("version" => 1);
   }
+  elseif ($module == "page_manager" && $api == "pages_default") {
+    return array("version" => 1);
+  }
   elseif ($module == "strongarm" && $api == "strongarm") {
     return array("version" => 1);
   }
@@ -44,6 +47,121 @@ function wiipod_feats_imagecache_default_presets() {
         ),
       ),
     ),
+    'pagevisual-7c-gr' => array(
+      'presetname' => 'pagevisual-7c-gr',
+      'actions' => array(),
+    ),
+    'pic-1c-square' => array(
+      'presetname' => 'pic-1c-square',
+      'actions' => array(
+        '0' => array(
+          'weight' => '-10',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale',
+          'data' => array(
+            'width' => '70',
+            'height' => '',
+            'upscale' => 0,
+          ),
+        ),
+        '1' => array(
+          'weight' => '-9',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale',
+          'data' => array(
+            'width' => '',
+            'height' => '70',
+            'upscale' => 0,
+          ),
+        ),
+        '2' => array(
+          'weight' => '0',
+          'module' => 'imagecache_canvasactions',
+          'action' => 'canvasactions_definecanvas',
+          'data' => array(
+            'RGB' => array(
+              'HEX' => 'ffffff',
+            ),
+            'under' => 1,
+            'exact' => array(
+              'width' => '70',
+              'height' => '70',
+              'xpos' => 'center',
+              'ypos' => 'center',
+            ),
+            'relative' => array(
+              'leftdiff' => '',
+              'rightdiff' => '',
+              'topdiff' => '',
+              'bottomdiff' => '',
+            ),
+          ),
+        ),
+      ),
+    ),
+    'pic_2c_square' => array(
+      'presetname' => 'pic_2c_square',
+      'actions' => array(
+        '0' => array(
+          'weight' => '0',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale',
+          'data' => array(
+            'width' => '230',
+            'height' => '124',
+            'upscale' => 0,
+          ),
+        ),
+      ),
+    ),
+    'projectlogo_9c' => array(
+      'presetname' => 'projectlogo_9c',
+      'actions' => array(
+        '0' => array(
+          'weight' => '0',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale',
+          'data' => array(
+            'width' => '',
+            'height' => '135',
+            'upscale' => 0,
+          ),
+        ),
+        '1' => array(
+          'weight' => '0',
+          'module' => 'imagecache',
+          'action' => 'imagecache_scale',
+          'data' => array(
+            'width' => '790',
+            'height' => '0',
+            'upscale' => 0,
+          ),
+        ),
+        '2' => array(
+          'weight' => '0',
+          'module' => 'imagecache_canvasactions',
+          'action' => 'canvasactions_definecanvas',
+          'data' => array(
+            'RGB' => array(
+              'HEX' => 'ffffff',
+            ),
+            'under' => 1,
+            'exact' => array(
+              'width' => '790',
+              'height' => '135',
+              'xpos' => 'center',
+              'ypos' => 'center',
+            ),
+            'relative' => array(
+              'leftdiff' => '',
+              'rightdiff' => '',
+              'topdiff' => '',
+              'bottomdiff' => '',
+            ),
+          ),
+        ),
+      ),
+    ),
   );
   return $items;
 }
@@ -64,28 +182,6 @@ function wiipod_feats_node_info() {
       'min_word_count' => '0',
       'help' => '',
     ),
-    'page' => array(
-      'name' => t('Page'),
-      'module' => 'features',
-      'description' => t('A <em>page</em>, similar in form to a <em>story</em>, is a simple method for creating and displaying information that rarely changes, such as an "About us" section of a website. By default, a <em>page</em> entry does not allow visitor comments and is not featured on the site\'s initial home page.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'has_body' => '1',
-      'body_label' => t('Body'),
-      'min_word_count' => '0',
-      'help' => '',
-    ),
-    'simplenews' => array(
-      'name' => t('Newsletter issue'),
-      'module' => 'features',
-      'description' => t('A newsletter issue to be sent to subscribed email addresses.'),
-      'has_title' => '1',
-      'title_label' => t('Title'),
-      'has_body' => '1',
-      'body_label' => t('Body'),
-      'min_word_count' => '0',
-      'help' => '',
-    ),
     'story' => array(
       'name' => t('Story'),
       'module' => 'features',
@@ -94,6 +190,28 @@ function wiipod_feats_node_info() {
       'title_label' => t('Title'),
       'has_body' => '1',
       'body_label' => t('Body'),
+      'min_word_count' => '0',
+      'help' => '',
+    ),
+    'video' => array(
+      'name' => t('Video'),
+      'module' => 'features',
+      'description' => t('Erlaubt das einbinden von Videos von Plattformen wie Youtube oder Vimeo.'),
+      'has_title' => '1',
+      'title_label' => t('Titel'),
+      'has_body' => '1',
+      'body_label' => t('Textkörper'),
+      'min_word_count' => '0',
+      'help' => '',
+    ),
+    'wiki' => array(
+      'name' => t('Wiki Seite'),
+      'module' => 'features',
+      'description' => t('Wiki Seite für Organic Groups'),
+      'has_title' => '1',
+      'title_label' => t('Titel'),
+      'has_body' => '1',
+      'body_label' => t('Textkörper'),
       'min_word_count' => '0',
       'help' => '',
     ),
